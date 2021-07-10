@@ -29,7 +29,7 @@
       v-model="celular"
       :rules="celularRules"
       label="Celular"
-      type="phone"
+      v-mask= "'(##)#####-####'"
     ></v-text-field>
     <v-checkbox
       v-model="checkbox"
@@ -43,7 +43,7 @@
       class="mr-4"
       @click="validate"
     >
-      Validate
+      Validar
     </v-btn>
 
     <v-btn
@@ -51,20 +51,24 @@
       class="mr-4"
       @click="reset"
     >
-      Reset Form
+      Resetar Campos
     </v-btn>
 
     <v-btn
       color="warning"
       @click="resetValidation"
     >
-      Reset Validation
+      Resetar Validação
     </v-btn>
   </v-form>
 </template>
 
 <script>
+
+import {mask} from 'vue-the-mask'
+
   export default {
+    directives: {mask},
     data: () => ({
       valid: true,
       name: '',
@@ -78,6 +82,10 @@
         v => /.+@.+\..+/.test(v) || 'E-mail precisa ser valido',
       ],
       celular: null,
+      celularRules: [
+        v => !!v || 'Por favor coloque um numero de celular válido',
+        v => /.+@.+\..+/.test(v) || 'E-mail precisa ser valido',
+      ],
       checkbox: true,
       Empresa: '',
       empresaRules: [
