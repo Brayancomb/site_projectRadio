@@ -53,13 +53,6 @@
     >
       Resetar Campos
     </v-btn>
-
-    <v-btn
-      color="warning"
-      @click="resetValidation"
-    >
-      Resetar Validação
-    </v-btn>
   </v-form>
 </template>
 

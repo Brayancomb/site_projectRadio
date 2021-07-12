@@ -70,7 +70,7 @@
               sdfgpjbnpdfgbndfghfghnfgdhnb
               dfasvsdfvsdfgbdfgbdfgbasdfvsdf
               gvdfgdbipjudfngipubn</p>
-            <span>R$100,00/month</span>
+            <span>R$100,00/mês</span>
           </div>
         </div>
       </div>
@@ -118,7 +118,7 @@ h1{
   position: relative;
   max-width: 300px;
   height: 215px;
-  background: #A9A9A9;
+  background: #368cb4;
   margin: 30px 10px;
   padding: 20px 15px;
   display: flex;

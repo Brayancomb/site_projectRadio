@@ -4,6 +4,7 @@
     height="400"
     hide-delimiter-background
     show-arrows-on-hover
+    touch="true"
   >
     <v-carousel-item
         v-for="(item,i) in items"
@@ -33,7 +34,7 @@
         ],
         items: [
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+            src: 'https://i.pinimg.com/originals/7e/24/fc/7e24fcd6bf0cef2d883c12321e7a7b15.jpg',
           },
           {
             src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
